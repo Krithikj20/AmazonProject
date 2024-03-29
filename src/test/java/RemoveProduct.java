@@ -8,6 +8,8 @@ public class RemoveProduct extends BaseTest {
         RemoveProductPageObjects remove = new RemoveProductPageObjects(driver);
         remove.setSearch();
         remove.setAddToCartButton();
+
         Assert.assertEquals(remove.removeItem(), "Your Amazon Cart is empty.");
+        System.out.println("Product Removed");
     }
 }
