@@ -9,6 +9,9 @@ public class RemoveProduct extends BaseTest {
         remove.setSearch();
         remove.setAddToCartButton();
         Assert.assertEquals(remove.removeItem(), "Your Amazon Cart is empty.");
-        System.out.println("Removed product successfully");
+        //System.out.println("Removed product successfully");
+        remove.homePageSignIn();
+
+
     }
 }

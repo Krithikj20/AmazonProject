@@ -28,8 +28,14 @@ public class RemoveProductPageObjects {
 @FindBy(xpath = "(//input[@value='Delete'])[1]")
 private WebElement delete;
 
-@FindBy(xpath="//h1[@class=\"a-spacing-mini a-spacing-top-base\"]")
+@FindBy(xpath="//h2[contains(text(),'Your Amazon Cart is empty.')]")
 private WebElement CartEmptyTitle;
+
+@FindBy(xpath="//a[@id='nav-logo-sprites']")
+private WebElement GoBackToHomePage;
+@FindBy(xpath="//span[@id='nav-link-accountList-nav-line-1']")
+public WebElement SignInTab;
+
     public void setSearch()
     {
         searchbar.sendKeys("Bag");
@@ -48,5 +54,15 @@ private WebElement CartEmptyTitle;
        String Title= CartEmptyTitle.getText();
        return Title;
     }
+    public void  homePageSignIn() {
+        GoBackToHomePage.click();
+    }
+//    public void signIn(){
+//        // Perform the hover action
+//        Actions actions = new Actions(driver);
+//        actions.moveToElement(SignInTab).perform();
+//    }
+
+
 }
 
