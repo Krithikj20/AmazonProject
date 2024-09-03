@@ -30,6 +30,8 @@ public class ProductDetailsPageObjects {
         searchbar.sendKeys("iphone 15");
         SearchIcon.click();
         FirstProduct.click();
+
+
     }
     public void verifyDetails() {
         Actions tab = new Actions(driver);
