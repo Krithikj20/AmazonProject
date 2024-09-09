@@ -17,8 +17,8 @@ public class HandlingdropdownPageObjects {
 
     }
 
-//    @FindBy(xpath = "//div[@class='nav-search-scope nav-sprite']")
-//    private WebElement AlltabDropdownTab;
+//@FindBy(xpath = "//div[@class='nav-search-scope nav-sprite']")
+//private WebElement AlltabDropdownTab;
 
 //@FindBy(xpath = "//option[contains(text(),'Music')]")
 //private WebElement MusicCategory;
@@ -38,7 +38,7 @@ public void dropdownFlow(){
     List<WebElement>options=dropdownCategory.getOptions();
     System.out.println("No. of categories in a dropdown : " + options.size());
 
-    //printing the options
+    //printing all the options
 for(int i=0; i<options.size(); i++){
     System.out.println(options.get(i).getText());
 }
