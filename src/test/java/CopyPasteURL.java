@@ -7,6 +7,6 @@ public class CopyPasteURL extends BaseTest{
     @Test
     public void copypasteFlow(){
         CopypasteUrlPageobjects copypaste = new CopypasteUrlPageobjects(driver);
-copypaste.setSearch();
+copypaste.test();
     }
 }

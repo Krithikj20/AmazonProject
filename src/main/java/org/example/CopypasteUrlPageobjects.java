@@ -25,7 +25,7 @@ public class CopypasteUrlPageobjects {
     @FindBy(xpath = "(//a[@class='a-link-normal s-no-outline'])[1]")
     private WebElement FirstProduct;
 
-    public void setSearch() {
+    public void test() {
         searchbar.sendKeys("iphone 15");
         SearchIcon.click();
         String currentURL =  driver.getCurrentUrl();
