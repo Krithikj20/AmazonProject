@@ -7,10 +7,14 @@
            </class>
        </classes>
     </test>
-    
+
     <test name="/Users/krithikj/AmazonProject/src/text/org/example/ProductDetails.java">
         <classes>
             <class name="ProductDetails">
+                <methods>
+                    <exclude name="productSearch"/>
+<!--                        <include name="productVerifyDetails"/>-->
+                </methods>
             </class>
         </classes>
     </test>
