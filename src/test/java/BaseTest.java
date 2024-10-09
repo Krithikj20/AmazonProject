@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
+//import java.time.Duration;
 
 public class BaseTest {
 
@@ -16,11 +16,11 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.get("https://www.amazon.in/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 @AfterClass
     public void teardown()
     {
-        driver.quit();
+       // driver.quit();
     }
 }

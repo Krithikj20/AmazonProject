@@ -17,10 +17,10 @@ public class HoveringPageObjects {
         @FindBy(xpath = "//a[@id='nav-link-amazonprime']")
         private WebElement PrimeHoverElement;
 
-        public void hoveringFlow () {
+        public void hoveringFlow ()
+        {
             Actions actions = new Actions(driver);
             actions.moveToElement(PrimeHoverElement).perform();
-
         }
 
     }
